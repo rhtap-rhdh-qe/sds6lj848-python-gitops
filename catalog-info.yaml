@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: sds6lj848-python-gitops
+  description: This is GitOps manifest for sds6lj848-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: tssc/gitops=sds6lj848-python
+    backstage.io/kubernetes-id: sds6lj848-python 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: sds6lj848-python
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:sds6lj848-python

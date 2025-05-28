@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: sds6lj848-python-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/sds6lj848-python
